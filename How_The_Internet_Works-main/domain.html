@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Domains</title>
+  <title>Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 </head>
+
+
 <body>
+
+<style>body {
+  font: 400 15px/1.8 Montserrat, sans-serif;
+  color: #444444;
+}
+</style>
 
 <!-- Navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -29,6 +38,7 @@
         <li><a href="dns.html">DNS</a></li>
         <li><a href="http_protocol.html">HTTP PROTOCOL</a></li>
         <li><a href="w3c.html">W3C/HTML/CSS</a></li>
+        <li><a href="">DOMAIN NAMES/ICANN</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
@@ -79,16 +89,44 @@
 .dropdown-menu li a:hover {
   background-color: red !important;
 }
+a unlink {
+  color: inherit;
+}
+a unlink:hover {
+  color: inherit;
+}
     </style>
 </nav>
-<hr><hr>
+<br><br><br><br><br>
 
+<!-- Body Content -->
 <div class="container text-center">
-  <h3>About the Internet</h3>
-  <p>The Internet is confusing, there's no way to fit everything about the internet on one page,but hopefully this website can give
-  an introduction into what it is.</p>
-  <p>We have created a fictional band website. Lorem ipsum..</p>
+  <h2>Domain Names and ICANN</h2>
+  <hr>
+  <p>Domain names are the addresses of the internet. If you want to create a website about your favorite knitting supplies, then how will
+  anyone find your website? Surely they won't be able to find your website by it's IP address, so they will need to use a domain name.
+  A domain name is what appears at the top of your browser whenever you go to a website. It's created by the person that is either
+  hosting or built the website, and usually made for someone to remember. Each domain name is connected to an IP address so your computer
+  will know what to request and what to expect when you type in a website in your search bar. </p>
+  <h3>So, who regulates these names?</h3>
+  <p>The Internet Corporation for Assigned Names and Numbers, or more easily remembered as ICANN, regulates and ensures that there is digital space
+  and a continued support for domain names and creates any regulation they see fit for the continued use of the internet. They created a structure
+  of the naming of domain names, and using an image from Wikipedia, it will be broken down into a simple guide. It's not difficult, and using
+  this format for all of the internet is key for it's continued growth.</p>
+  <hr>
+  <img src="img/naming.png" class="img-responsive">
+  <hr>
+
+  <p>Looking at the diagram, the link en.wikipedia.org is broken down into a few categories. Starting at the top, the period is used to separate any
+  labels which would follow. Next is the .org which is the top level domain, or TLD. After that is the second level domain and finally the en. is the
+  subdomain. Each website follows this general breakdown, usually websites start with www. </p>
+  <hr>
+
 </div>
+  <!--<p>Formally, the definition of the internet is "The Internet, a loosely-organized international collaboration of autonomous,
+    interconnected networks, supports host-to-host communication through voluntary adherence to open protocols and procedures
+    defined by Internet Standards [1]." To most, however, it is a source of knowledge that can foster personal, professional, and
+  intellectual growth... Or watch videos of cats.</p> -->
 
 </body>
 </html>
