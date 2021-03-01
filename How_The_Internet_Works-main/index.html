@@ -7,8 +7,17 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 </head>
+
+
 <body>
+
+<style>body {
+  font: 400 15px/1.8 Montserrat, sans-serif;
+  color: #444444;
+}
+</style>
 
 <!-- Navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -79,19 +88,85 @@
 .dropdown-menu li a:hover {
   background-color: red !important;
 }
+a unlink {
+  color: inherit;
+}
+a unlink:hover {
+  color: inherit;
+}
     </style>
 </nav>
+<br><br><br><br><br>
 
 <!-- Body Content -->
 <div class="container">
-    <div class="jumbotron p-md-5 text-white rounded bg-dark">
+    <div class="jumbotron text-white rounded bg-dark container-fluid">
         <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic">How the Internet Works</h1>
+          <h2 class="display-4 font-italic">How the Internet Works</h2>
           <p class="lead my-3">Here you can discover how the internet really works, find out about the basics of webpages, and how we can communicate with one another
                                 almost instantly.</p>
-          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">About Page...</a></p>
+          <p class="lead mb-0"><a href="about.html" class="text-white font-weight-bold">About Page...</a></p>
+        </div>
+    </div>
+</div>
+
+<h3 class="text-center">Want to quickly jump to a certain page? Click a link below</h3>
+<hr><br>
+
+<!--Cards -->
+
+<div class="card-group">
+  <div class="card">
+    <div class="col-md-6 col-lg-3">
+      <div class="card">
+        <a href="about.html"
+        <div class="card-block">
+          <h3 class="card-title">About Page</h3>
+          <p>Learn more about what the internet is and what this website is.</p></a>
         </div>
       </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card">
+        <a href="ip.html">
+        <div class="card-body">
+          <h3 class="card-title">Ip Addresses</h3>
+          <p>Learn about how IP Addresses help connect us to one another</p></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card">
+        <a href="dns.html">
+        <div class="card-block">
+          <h3 class="card-title">DNS</h3>
+          <p>Here's how computers figure out who to talk to.</p></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card">
+        <a href="http_protocol.html">
+        <div class="card-block">
+          <h3 class="card-title">HTTP</h3>
+          <p>How can we see easy to read websites rather than style sheets and code?</p></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card">
+        <a href="w3c.html">
+        <div class="card-block">
+          <h3 class="card-title">W3C/HTML/CSS</h3>
+          <p>The W3C develop standards for the internet, figure out what they are.</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 </body>
