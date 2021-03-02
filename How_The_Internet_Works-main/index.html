@@ -39,7 +39,7 @@
         <li><a href="http_protocol.html">HTTP PROTOCOL</a></li>
         <li><a href="w3c.html">W3C/HTML/CSS</a></li>
         <li><a href="domain.html">DOMAIN NAMES/ICANN</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+
       </ul>
     </div>
   </div>
@@ -99,6 +99,13 @@ a unlink:hover {
 </nav>
 <br><br><br><br><br>
 
+<style>
+  .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: scale-down;
+}</style>
+
 <!-- Body Content -->
 <div class="container">
     <div class="jumbotron text-white rounded bg-dark container-fluid">
@@ -116,14 +123,15 @@ a unlink:hover {
 
 <!--Cards -->
 
-<div class="card-group">
-  <div class="card">
+<div class="row">
+
     <div class="col-md-6 col-lg-3">
       <div class="card">
-        <a href="about.html"
-        <div class="card-block">
+        <a href="about.html">
+          <img src="img/monkey.png" class="card-img-top img-fluid">
+        <div class="card-body">
           <h3 class="card-title">About Page</h3>
-          <p>Learn more about what the internet is and what this website is.</p></a>
+          <p>The about page is about me and what this project is. You can see why I made this and what work I put into it.</p></a>
         </div>
       </div>
     </div>
@@ -131,9 +139,11 @@ a unlink:hover {
     <div class="col-md-6 col-lg-3">
       <div class="card">
         <a href="ip.html">
+          <img src="img/tcpip.png" class="card-img-top img-fluid">
         <div class="card-body">
-          <h3 class="card-title">Ip Addresses</h3>
-          <p>Learn about how IP Addresses help connect us to one another</p></a>
+          <h3 class="card-title">IP Addresses</h3>
+          <p>IP Addresses help connect our computers to servers and websites. If there are so many websites,
+          how many will we be able to reach until we run out? Will we ever run out? More inside...</p></a>
         </div>
       </div>
     </div>
@@ -141,9 +151,11 @@ a unlink:hover {
     <div class="col-md-6 col-lg-3">
       <div class="card">
         <a href="dns.html">
-        <div class="card-block">
+          <img src="img/dnslogo.png" class="card-img-top img-fluid">
+        <div class="card-body">
           <h3 class="card-title">DNS</h3>
-          <p>Here's how computers figure out who to talk to.</p></a>
+          <p>DNS is practical for our every day lives, after all, we don't want to memorize countless IP addresses when
+          we could just type in the name of the website we want to visit.</p></a>
         </div>
       </div>
     </div>
@@ -151,9 +163,11 @@ a unlink:hover {
     <div class="col-md-6 col-lg-3">
       <div class="card">
         <a href="http_protocol.html">
-        <div class="card-block">
-          <h3 class="card-title">HTTP</h3>
-          <p>How can we see easy to read websites rather than style sheets and code?</p></a>
+          <img src="img/httplogo.png" class="card-img-top img-fluid">
+        <div class="card-body">
+          <h3 class="card-title">HTTP/HTTPS</h3>
+          <p>HTTPS keeps us safe and browse the internet securely. Find out how multiple systems work together without
+          you ever knowing they're happening in the first place.</p></a>
         </div>
       </div>
     </div>
@@ -161,9 +175,11 @@ a unlink:hover {
     <div class="col-md-6 col-lg-3">
       <div class="card">
         <a href="w3c.html">
-        <div class="card-block">
+          <img src="img/w3clogo.png" class="card-img-top img-fluid">
+        <div class="card-body">
           <h3 class="card-title">W3C/HTML/CSS</h3>
-          <p>The W3C develop standards for the internet, figure out what they are.</p></a>
+          <p>The W3C developed many standards for the web, including many topics about HTML and CSS. These have been
+          pivotal in the development of the modern web. See what they've been up to for the past 26 years.</p></a>
         </div>
       </div>
     </div>
