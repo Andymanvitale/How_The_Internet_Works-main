@@ -7,9 +7,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 </head>
 <body>
 
+<style>body {
+  font: 400 15px/1.8 Montserrat, sans-serif;
+  color: #444444;
+}
+</style>
 <!-- Navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -29,6 +35,7 @@
         <li><a href="dns.html">DNS</a></li>
         <li><a href="http_protocol.html">HTTP PROTOCOL</a></li>
         <li><a href="w3c.html">W3C/HTML/CSS</a></li>
+        <li><a href="domain.html">DOMAIN NAMES/ICANN</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
@@ -81,14 +88,27 @@
 }
     </style>
 </nav>
-<hr><hr>
+<br><br><br><br><br>
 
 <div class="container text-center">
-  <h3>About the Internet</h3>
-  <p>The Internet is confusing, there's no way to fit everything about the internet on one page,but hopefully this website can give
-  an introduction into what it is.</p>
-  <p>We have created a fictional band website. Lorem ipsum..</p>
+  <h2>DNS(Domain Naming System)</h2>
+  <hr>
+  <p>DNS is the standard form for naming websites and has been adopted internationally. It relates an IP address to a more easy to remember website name.
+  It wouldn't be practical to remember the number combination of your favorite website, but using DNS like a phone book, you can type in what you are
+  looking for and DNS will search for it and connect you to what you want to see.</p>
+  <p>Unfortunately, having a public network of available addresses and websites calls for trouble to start. Someone can spoof the IP address of the website
+  you are trying to find and you can become susceptible to cyber attacks or having personal information stolen. It's hard to tell if you're really on the
+  website you believe you are on, but having a secure connection can verify whether or not you are on the site you are on.</p>
+  <hr>
+  <img src="img/dnspic1.gif" class="img-responsive-center">
+  <hr>
+  <h3>How every website is tracked</h3>
+  <p>The internet is a large collection of many websites and data, so how can each site have it's own unique name and address. This is referred to in the IP
+  Addresses page, but an IP address is assigned to it, and that IP address is connected to the domain name it holds. There are regulating organizations which
+  oversee this process, such as ICANN. Furthermore, looking at the breakdown of how a domain is structured above, the root can be .org, .com, or .net, among
+  many others. Any of these three top level domains can contain the same domain name. Having these structures allows for the interconnectivity at nearly
+  instant speeds to occur. Any additional translation of data or packets of data being lost due to incompatible domains seems unacceptable.</p>
 </div>
-
+<br><br><br>
 </body>
 </html>
