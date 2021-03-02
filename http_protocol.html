@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTTP(s)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<style>body {
+  font: 400 15px/1.8 Montserrat, sans-serif;
+  color: #444444;
+</style>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Andrew's Site</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="ip.html">IP ADDRESSES</a></li>
+        <li><a href="dns.html">DNS</a></li>
+        <li><a href="http_protocol.html">HTTP PROTOCOL</a></li>
+        <li><a href="w3c.html">W3C/HTML/CSS</a></li>
+        <li><a href="domain.html">DOMAIN NAMES/ICANN</a></li>
+
+      </ul>
+    </div>
+  </div>
+    <style>
+        .navbar {
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  font-size: 11px !important;
+  letter-spacing: 4px;
+  opacity: 0.9;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+  color: #d5d5d5 !important;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color:#29292c !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+  color: #fff ;
+  background-color: #555 !important;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+  color: #000 !important;
+}
+
+/* On hover, the dropdown links will turn red */
+.dropdown-menu li a:hover {
+  background-color: red !important;
+}
+    </style>
+</nav>
+<hr><hr>
+
+<div class="container text-center">
+  <h2>HTTP/HTTPS</h2>
+  <p>HTTP stands for Hyper Text Transfer Protocol and HTTPS just adds secure to end end of that. This is essentially the way that your computer knows what to do
+  when it goes to a website. For example, if I was to go to a website my computer would send many "get requests" to it in order to do what I ask it to do.
+  When I want to search something, I would send a post request and it would come back with whatever the answer was.</p>
+  <p>Since there is potentially personal data being sent across networks, someone could access it without permission. The way that was developed to counteract
+  this is by creating a secure channel for communications. HTTPS uses trusted certificates to ensure that you are on the correct website and your information
+  is not being taken from you. While also doing that, your computer uses SSL and TLS which is secure sockets layer and transport layer security. These all
+  run together to ensure that you are staying safe while browsing, but it can only go so far in some instances. To ensure that you are being protected even further,
+  encryption and decryption is constantly used. The standard for modern day encryption is 256 bit keys which are secure enough for most people to remain safe during
+  daily use. One way this is done is by SSL and TLS using public key encryption. This method ensures that they key can be accessed and data is sent reliably and
+  safely, but also with high speeds. Asymmetric keys are used so people can send messages and the recipient can receive a message without having to know the
+  encryption key of the person, but they have their own decryption key which receives the messages meant for them.</p>
+  <hr>
+  <img src="img/publickey.png" class="img-responsive">
+  <hr>
+  <p>Looking at this example shows how a public key can send a message across a network while remaining safe. Neither one of the people know the key of the other
+    person but they were both able to communicate.</p>
+</div>
+<br><br>
+
+</body>
+</html>
