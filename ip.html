@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Internet Protocols</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<style>body {
+  font: 400 15px/1.8 Montserrat, sans-serif;
+  color: #444444;
+}
+</style>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Andrew's Site</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="ip.html">IP ADDRESSES</a></li>
+        <li><a href="dns.html">DNS</a></li>
+        <li><a href="http_protocol.html">HTTP PROTOCOL</a></li>
+        <li><a href="w3c.html">W3C/HTML/CSS</a></li>
+        <li><a href="domain.html">DOMAIN NAMES/ICANN</a></li>
+      </ul>
+    </div>
+  </div>
+    <style>
+        .navbar {
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  font-size: 11px !important;
+  letter-spacing: 4px;
+  opacity: 0.9;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+  color: #d5d5d5 !important;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color:#29292c !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+  color: #fff ;
+  background-color: #555 !important;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+  color: #000 !important;
+}
+
+/* On hover, the dropdown links will turn red */
+.dropdown-menu li a:hover {
+  background-color: red !important;
+}
+    </style>
+</nav>
+<br><br><br><br><br>
+
+<div class="container text-center">
+  <h2>IP Addresses, Packets, and Routing</h2>
+  <hr>
+  <h3>IP Addresses</h3>
+  <p>Internet Protocol, or IP is the simple way that computers and networks communicate with one another to send data. Each computer has a unique address
+  which can be used to send and receive data. IPv4 was developed in 1973 and it provides over 4 billion unique addresses to networks across the world. That
+    number seems like a lot however as the internet continues to expand, all 4 billion will eventually be taken up and there will be no more unique addresses
+    available. Each IPv4 is 32 bits long and is broken down into 4 sections. Each IP address follows the format of W.X.Y.Z and each letter represents 8 bits.</p>
+  <p>In order to solve the issue of running out of unique addresses, IPv6 was developed. It follows a 128 bit format and will be able to produce over
+  340 undecillion unique addresses. The more accurate number of unique addresses is 340,282,366,920,938,000,000,000,000,000,000,000,000. Having that many
+  unique addresses was compared to one address per grain of sand on the Earth. Wikipedia has a breakdown of how the naming of IPv6 works.</p>
+  <hr>
+  <img src="img/ipv6.png" class="img-responsive">
+  <hr>
+  <h3>Packets</h3>
+  <p>Sending a full image across the internet can consume a lot of resources and slow down load speeds. In order to fix that, data is broken down into packets
+    and is sent across networks until it arrives at the recipient.  Since the data is being broken into pieces, by itself there is no way that we know if we
+    received it all without analyzing all of it. That's why the Transmission Control Protocol, or TCP, was developed. It's duty is to read incoming
+    messages and ensure that it is fully received and assembled correctly. If it isn't it sends back a signal to the sender and it will be resent. </p>
+  <p>Breaking down large chunks of data into packets is an amazing idea and it has a failsafe to ensure it is being done correctly. The data is broken
+  down into binary and takes up much less resources. These packets are restricted to 64K or 65535 bytes. Sending multiple packets of this size can ensure
+  they are arriving as fast as possible, and due to their independence from one another, they can travel on the most efficient route to the recipient.
+  Data is limited by the capabilities of the hardware it is travelling through. The bandwidth measures the number of bits that can be handled by the
+  network and is measured in bits per second. Latency measures how long it takes for a bit to travel from sender to receiver. Each of these play into how fast
+  data can be transmitted from a sender to a receiver.</p>
+
+  <h3>Routing</h3>
+  <p>Routing is the basic way of saying the path that a packet of information will take as it goes from the sender to the recipient. As it travels, the signal
+  takes different paths to ensure it arrives at it's destination as fast as possible and as 'cheap' as possible. There are multiple ways that this data gets
+  sent. One way is by light using fiber optic cables. These cables are expensive to manufacture and hard to work with, but they are reliable and have barely any
+  signal loss over long distances. Another way that a packet can travel is by using electricity, where a signal travels through a wire or cable. A third way
+  that a signal can travel is through radio waves. Data is translated into radio waves and is sent over a wireless connection. This data is not reliable over
+  long distances and is generally used for situations like WiFi. Putting it all together, we can interact with all of these types of connections at once. We could
+  be on our phones uploading a message to a website. That signal would travel over WiFi to a router, where it will travel over an electrical signal through
+  multiple networks and eventually reach a fiber optic cable. That cable runs through the ocean to another country where it follows the same process backward
+  and someone will be able to see it.</p>
+</div>
+
+
+
+</body>
+</html>
