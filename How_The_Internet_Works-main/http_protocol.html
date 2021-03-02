@@ -7,8 +7,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+<style>body {
+  font: 400 15px/1.8 Montserrat, sans-serif;
+  color: #444444;
+</style>
 
 <!-- Navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -29,6 +35,7 @@
         <li><a href="dns.html">DNS</a></li>
         <li><a href="http_protocol.html">HTTP PROTOCOL</a></li>
         <li><a href="w3c.html">W3C/HTML/CSS</a></li>
+        <li><a href="domain.html">DOMAIN NAMES/ICANN</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
@@ -84,11 +91,25 @@
 <hr><hr>
 
 <div class="container text-center">
-  <h3>About the Internet</h3>
-  <p>The Internet is confusing, there's no way to fit everything about the internet on one page,but hopefully this website can give
-  an introduction into what it is.</p>
-  <p>We have created a fictional band website. Lorem ipsum..</p>
+  <h2>HTTP/HTTPS</h2>
+  <p>HTTP stands for Hyper Text Transfer Protocol and HTTPS just adds secure to end end of that. This is essentially the way that your computer knows what to do
+  when it goes to a website. For example, if I was to go to a website my computer would send many "get requests" to it in order to do what I ask it to do.
+  When I want to search something, I would send a post request and it would come back with whatever the answer was.</p>
+  <p>Since there is potentially personal data being sent across networks, someone could access it without permission. The way that was developed to counteract
+  this is by creating a secure channel for communications. HTTPS uses trusted certificates to ensure that you are on the correct website and your information
+  is not being taken from you. While also doing that, your computer uses SSL and TLS which is secure sockets layer and transport layer security. These all
+  run together to ensure that you are staying safe while browsing, but it can only go so far in some instances. To ensure that you are being protected even further,
+  encryption and decryption is constantly used. The standard for modern day encryption is 256 bit keys which are secure enough for most people to remain safe during
+  daily use. One way this is done is by SSL and TLS using public key encryption. This method ensures that they key can be accessed and data is sent reliably and
+  safely, but also with high speeds. Asymmetric keys are used so people can send messages and the recipient can receive a message without having to know the
+  encryption key of the person, but they have their own decryption key which receives the messages meant for them.</p>
+  <hr>
+  <img src="img/publickey.png" class="img-responsive">
+  <hr>
+  <p>Looking at this example shows how a public key can send a message across a network while remaining safe. Neither one of the people know the key of the other
+    person but they were both able to communicate.</p>
 </div>
+<br><br>
 
 </body>
 </html>
